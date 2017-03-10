@@ -1,0 +1,25 @@
+{
+  "name": "barbershop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bunkerWHz/Barbershop-Responsive.git"
+  },
+  "keywords": [
+    "barbershop"
+  ],
+  "author": "Andrei Parsegov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bunkerWHz/Barbershop-Responsive/issues"
+  },
+  "homepage": "https://github.com/bunkerWHz/Barbershop-Responsive#readme",
+  "devDependencies": {
+    "gulp-sass": "^3.1.0"
+  }
+}
