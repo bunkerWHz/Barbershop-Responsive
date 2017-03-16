@@ -13,13 +13,13 @@
     height: 43px; } }
 
 @media (min-width: 768px) {
-  .main-header .page-header--logo {
+  .page-header--logo {
     box-sizing: border-box;
     height: 400px;
     order: 2;
-    background: url(/img/background-tablet.jpg) no-repeat;
+    background: url(/img/background-tablet.jpg) no-repeat 0 -55px;
     background-size: cover; }
-  .main-header .page-header--logo img {
+  .page-header--logo img {
     display: block;
     content: url(/img/logotype-tablet.svg);
     margin: 0 auto;
