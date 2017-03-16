@@ -1,10 +1,7 @@
 .stats {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   min-width: 320px;
-  height: 500px;
-  background-color: green;
+  min-height: 100px;
 }
 
 .stats__header {
@@ -16,17 +13,16 @@
 }
 
 .stats__slogan {
-
   margin: 0 65px;
+  margin: 0 auto 25px;
   font-size: 30px;
   line-height: 30px;
   display: block;
   text-align: center;
-  margin: 0 auto 25px;
   text-transform: uppercase;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 767px) {
   .stats-legend--top {
     display: none;
   }
@@ -37,4 +33,23 @@
   line-height: 27px;
   text-align: center;
   margin: 0 40px;
+}
+
+.stats__items {
+  width: 100%;
+}
+.stats__items tr:nth-child(odd){
+  background-color: #404040;
+}
+.stats__items tr:nth-child(even){
+  background-color: #4e4e4e;
+}
+.stats__items .stats__value {
+  text-align: left;
+  padding: 20px 0 20px 25px;
+  font-size: 40px;
+}
+.stats__items .stats__field {
+  text-align: right;
+  padding: 20px;
 }

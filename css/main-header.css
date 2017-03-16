@@ -1,4 +1,8 @@
 .main-header {
   background-color: #242424;
-  min-width: 320px;
-  min-height: 200px; }
+  min-width: 320px; }
+
+@media (min-width: 768px) {
+  .main-header {
+    display: flex;
+    flex-direction: column; } }
