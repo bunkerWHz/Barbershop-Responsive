@@ -1,0 +1,107 @@
+.page-footer {
+  background-color: #292929; }
+
+.page-footer__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-top: 1px solid #3e3e3e; }
+
+.footer__contacts {
+  box-sizing: border-box;
+  height: 220px;
+  text-align: center; }
+
+.footer__contacts a[href^=tel] {
+  margin: 25px 0;
+  display: block;
+  box-sizing: border-box;
+  height: 50px;
+  border: 1px solid #3e3e3e;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 10px;
+  font-size: 18px;
+  line-height: 27px; }
+
+@media (max-width: 767px) {
+  .page-footer__contacts-hidden {
+    display: none; } }
+
+.social-links {
+  display: flex;
+  flex-direction: row; }
+
+.social-link {
+  border: 1px solid #3e3e3e;
+  font-size: 0;
+  width: 33%;
+  height: 100px; }
+
+.page-footer__copyright {
+  text-align: center; }
+
+.page-footer__copyright-link {
+  color: #ffffff;
+  background-color: #292929;
+  margin: 20px 0;
+  width: 100%;
+  border-color: #3e3e3e; }
+
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    padding-top: 55px;
+    width: 640px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .footer__contacts {
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px; }
+  .footer__contacts b {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700; }
+  .footer__contacts a[href^=tel] {
+    border: none;
+    display: inline; }
+  .footer__contacts {
+    text-align: left;
+    width: 320px;
+    order: 1;
+    height: 135px;
+    margin-bottom: 0; }
+  .page-footer__social {
+    width: 100%;
+    order: 3; }
+  .page-footer__copyright {
+    margin: 0;
+    width: 160px;
+    order: 2;
+    height: 135px; } }
+
+@media (min-width: 1200px) {
+  .page-footer__wrapper {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 960px;
+    justify-content: space-between; }
+  .footer__contacts {
+    margin-top: 0; }
+  .page-footer__social {
+    order: 2;
+    width: 162px;
+    box-sizing: border-box; }
+  .social-link {
+    box-sizing: border-box;
+    width: 47px;
+    height: 47px;
+    margin-right: 5px; }
+  .social-link:last-child {
+    margin-right: 0; }
+  .page-footer__copyright {
+    order: 3; } }

@@ -2,7 +2,7 @@
   box-sizing: border-box;
   min-width: 320px;
   min-height: 100px;
-  background-color: #353535;
+  background-color: #242424;
   color: #fff; }
 
 .stats__header {
@@ -32,7 +32,8 @@
   margin: 0 40px; }
 
 .stats__items {
-  width: 100%; }
+  width: 100%;
+  background-color: #242424; }
 
 .stats__items tr:nth-child(1),
 .stats__items tr:nth-child(4) {
@@ -85,11 +86,13 @@
       border-style: solid;
       border-width: 24px 24px 0 24px;
       border-color: #ffffff transparent transparent transparent; }
+  .stats {
+    background-color: #353535; }
   .stats__slogan {
     text-align: left;
     margin: 0 0 20px 0;
     box-sizing: border-box;
-    flex-basis: 50%;
+    width: 50%;
     text-transform: none;
     font-size: 40px;
     line-height: 40px;
@@ -99,25 +102,26 @@
     padding-left: 25px;
     margin: 0;
     box-sizing: border-box;
-    flex-basis: 50%; }
+    width: 50%; }
   .stats__legend--top {
     color: #b2b2b2;
     font-size: 20px;
     line-height: 27px;
-    margin-right: auto; }
+    margin-right: auto;
+    width: 100%; }
   .stats__legend--bottom {
     display: none; }
   .stats__items {
     margin: 0 auto;
     box-sizing: border-box;
-    width: 640px;
-    height: 320px; }
+    width: 640px; }
   .stats__items tbody {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%; }
   .stats__items tr {
+    align-items: stretch;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -139,4 +143,35 @@
   .stats {
     width: 960px;
     height: 320px;
-    margin: 0 auto; } }
+    margin: 0 auto;
+    display: flex;
+    margin-top: -158px; }
+  .stats__header {
+    box-sizing: border-box;
+    width: 320px;
+    height: 320px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 0 50px; }
+  .stats__header .stats__slogan {
+    box-sizing: border-box;
+    width: 220px; }
+  .stats__header .stats__intro {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-left: 0; }
+  .stats__header .stats__slogan br {
+    display: none; }
+  .stats__items {
+    display: flex; }
+  .stats__items .stats__value {
+    font-size: 72px;
+    align-self: center;
+    line-height: 18px;
+    padding: 50px 0 0 50px;
+    height: 66%; }
+  .stats__items .stats__field {
+    padding: 0 50px;
+    height: 33%; } }

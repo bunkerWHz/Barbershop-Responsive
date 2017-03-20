@@ -75,12 +75,13 @@
     content: "";
     width: 16px;
     height: 16px;
-    background-image: url(/img/login.png);
+    background-image: url(../img/login.png);
     opacity: 0.3;
   }
 }
 
 .main-nav__toggle {
+  outline: none;
   position: absolute;
   z-index: 2;
   right: 0;

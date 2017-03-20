@@ -1,0 +1,18 @@
+.slider__input {
+  display: none; }
+
+.slider__toggle {
+  border: 6px solid white;
+  transform: rotate(45deg); }
+
+.slider__item--hidden {
+  display: none; }
+
+.slider__toggles {
+  width: 80px;
+  height: 12px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-size: 0;
+  display: flex;
+  justify-content: space-between; }

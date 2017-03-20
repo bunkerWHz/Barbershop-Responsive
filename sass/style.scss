@@ -3,9 +3,15 @@ body {
   font-size: 20px;
   line-height: 27px;
   font-family: 'PT Sans Narrow', sans-serif;
+  background-color: #353535;
 }
-
+@import "btn";
+@import "slider";
 @import "main-header";
 @import "page-header";
 @import "main-nav";
 @import "stats";
+@import "advantages";
+@import "news";
+@import "reviews";
+@import "page-footer";

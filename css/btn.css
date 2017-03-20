@@ -1,0 +1,14 @@
+.btn {
+  height: 50px;
+  padding: 12px 15px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #e5ddd5;
+  box-sizing: border-box;
+  color: #000;
+  background-color: #f8f5f2; }
