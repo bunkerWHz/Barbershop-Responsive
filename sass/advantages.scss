@@ -109,6 +109,7 @@
     width: 235px;
     height: auto;
     border: none;
+    position: relative;
     &:first-child {
       border-top: none;
       background: url(../img/advantage-1-illustration.svg) no-repeat center 120px;
@@ -116,6 +117,26 @@
     &:last-child {
       border-bottom: none;
       background: url(../img/advantage-3-illustration.svg) no-repeat center 120px;
+    }
+  }
+  .advantages__item:nth-child(2){
+    &::before {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 280px;
+      background-color: #4a4a4a;
+      left: -55px;
+      top: 120px;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 280px;
+      background-color: #4a4a4a;
+      right: -55px;
+      top: 120px;
     }
   }
   .advantages__item-title {

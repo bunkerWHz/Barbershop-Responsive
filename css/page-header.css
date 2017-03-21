@@ -1,16 +1,20 @@
 .page-header--logo {
-  min-width: 320px; }
+  min-width: 320px;
+}
 
 @media (max-width: 767px) {
   .main-header .page-header--logo {
     padding: 21px 0;
     min-height: 85px;
     text-align: center;
-    order: 1; }
+    order: 1;
+  }
   .page-header--logo img {
     padding-top: 21px;
     width: 320px;
-    height: 43px; } }
+    height: 43px;
+  }
+}
 
 @media (min-width: 768px) {
   .page-header--logo {
@@ -18,15 +22,20 @@
     height: 400px;
     order: 2;
     background: url(../img/background-tablet.jpg) no-repeat 0 -55px;
-    background-size: cover; }
+    background-size: cover;
+  }
   .page-header--logo img {
     display: block;
     margin: 0 auto;
     margin-top: 42px;
     width: 370px;
-    height: 101px; } }
+    height: 101px;
+  }
+}
 
 @media (min-width: 768px) and (min-width: 1200px) {
   .page-header--logo img {
     width: 370px;
-    height: 153px; } }
+    height: 153px;
+  }
+}

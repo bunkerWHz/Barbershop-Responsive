@@ -1,12 +1,15 @@
 .slider__input {
-  display: none; }
+  display: none;
+}
 
 .slider__toggle {
   border: 6px solid white;
-  transform: rotate(45deg); }
+  transform: rotate(45deg);
+}
 
 .slider__item--hidden {
-  display: none; }
+  display: none;
+}
 
 .slider__toggles {
   width: 80px;
@@ -15,4 +18,5 @@
   margin: 0 auto;
   font-size: 0;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
