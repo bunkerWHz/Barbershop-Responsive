@@ -117,8 +117,6 @@
     background-color: #fff; }
   .main-nav--opened .main-nav__toggle::before {
     transform: rotate(45deg);
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
     box-shadow: none; }
   .main-nav--opened .main-nav__toggle::after {
     transform: rotate(-45deg); }

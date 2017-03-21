@@ -1,6 +1,6 @@
 body {
-  color: #fff;
-  font-size: 20px;
+  color: #f7f4f1;
+  font-size: 18px;
   line-height: 27px;
   font-family: 'PT Sans Narrow', sans-serif;
   background-color: #353535; }
@@ -71,11 +71,15 @@ body {
     background-size: cover; }
   .page-header--logo img {
     display: block;
-    content: url(../img/logotype-tablet.svg);
     margin: 0 auto;
     margin-top: 42px;
     width: 370px;
     height: 101px; } }
+
+@media (min-width: 768px) and (min-width: 1200px) {
+  .page-header--logo img {
+    width: 370px;
+    height: 153px; } }
 
 .main-nav {
   background-color: #826550;
@@ -196,8 +200,6 @@ body {
     background-color: #fff; }
   .main-nav--opened .main-nav__toggle::before {
     transform: rotate(45deg);
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
     box-shadow: none; }
   .main-nav--opened .main-nav__toggle::after {
     transform: rotate(-45deg); }
@@ -502,6 +504,7 @@ body {
   display: flex; }
 
 .advantages__item {
+  background: url(../img/advantage-1-illustration.svg) no-repeat center 40px;
   padding-top: 150px;
   min-height: 100px;
   width: 240px;
@@ -542,6 +545,7 @@ body {
     width: 640px;
     margin: 0 auto; }
   .advantages__item {
+    background: url(../img/advantage-2-illustration.svg) no-repeat 30px 50px;
     padding-top: 0;
     padding-left: 160px;
     box-sizing: border-box;
@@ -551,9 +555,11 @@ body {
     border-top: 1px solid #4a4a4a;
     border-bottom: 1px solid #4a4a4a; }
     .advantages__item:first-child {
-      border-top: none; }
+      border-top: none;
+      background: url(../img/advantage-1-illustration.svg) no-repeat 30px 50px; }
     .advantages__item:last-child {
-      border-bottom: none; }
+      border-bottom: none;
+      background: url(../img/advantage-3-illustration.svg) no-repeat 30px 50px; }
   .advantages__item-title {
     text-align: left;
     margin-top: 45px;
@@ -573,6 +579,7 @@ body {
     margin: 0 auto;
     display: flex; }
   .advantages__item {
+    background: url(../img/advantage-2-illustration.svg) no-repeat no-repeat center 120px;
     padding: 200px 0 0 0;
     margin-bottom: 40px;
     box-sizing: border-box;
@@ -581,9 +588,11 @@ body {
     height: auto;
     border: none; }
     .advantages__item:first-child {
-      border-top: none; }
+      border-top: none;
+      background: url(../img/advantage-1-illustration.svg) no-repeat center 120px; }
     .advantages__item:last-child {
-      border-bottom: none; }
+      border-bottom: none;
+      background: url(../img/advantage-3-illustration.svg) no-repeat center 120px; }
   .advantages__item-title {
     text-align: center;
     margin-bottom: 20px; }
@@ -800,7 +809,7 @@ body {
     padding: 0;
     margin: 0 20px; }
   .reviews__auhor-foto img {
-    background: url(/img/pic-travis-desktop.jpg) no-repeat;
+    background: url(../img/pic-travis-desktop.jpg) no-repeat;
     display: block;
     max-width: 249px;
     max-height: 160px;

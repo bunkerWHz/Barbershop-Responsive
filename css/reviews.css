@@ -95,7 +95,7 @@
     padding: 0;
     margin: 0 20px; }
   .reviews__auhor-foto img {
-    background: url(/img/pic-travis-desktop.jpg) no-repeat;
+    background: url(../img/pic-travis-desktop.jpg) no-repeat;
     display: block;
     max-width: 249px;
     max-height: 160px;

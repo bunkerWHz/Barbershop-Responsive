@@ -21,8 +21,12 @@
     background-size: cover; }
   .page-header--logo img {
     display: block;
-    content: url(../img/logotype-tablet.svg);
     margin: 0 auto;
     margin-top: 42px;
     width: 370px;
     height: 101px; } }
+
+@media (min-width: 768px) and (min-width: 1200px) {
+  .page-header--logo img {
+    width: 370px;
+    height: 153px; } }
