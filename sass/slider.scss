@@ -2,7 +2,9 @@
   display: none;
 }
 .slider__toggle {
-  border: 6px solid white;
+  width: 4px;
+  height: 4px;
+  border: 1px solid white;
   transform: rotate(45deg);
 }
 .slider__item--hidden {

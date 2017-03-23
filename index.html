@@ -9,15 +9,12 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
+        <!--[if lt IE 10]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
@@ -112,7 +109,7 @@
                     </li>
                     <li class="news__item">
                         <time class="news__date" datetime="2016-09-19"><b>19</b> сент</time>
-                        <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград поволнил наши стройные ряды. Спешите записаться!</p>
+                        <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград, пополнил наши стройные ряды. Спешите записаться!</p>
                     </li>
                     <li class="news__item news__item--closed">
                         <time class="news__date" datetime="2016-09-09"><b>9</b> сент</time>
@@ -122,6 +119,7 @@
                 <a class="news__to-all btn" href="#">Показать все</a>
             </div>
         </section>
+
         <section class="reviews">
             <div class="reviews__wrapper slider">
                 <h2 class="reviews__title">Отзывы о нас</h2>
@@ -132,21 +130,33 @@
                 <div class="reviews__items">
                     <blockquote class="reviews__item slider__item">
                         <div class="reviews__auhor-foto">
-                            <img src="img/pic-travis.jpg" width="50" height="50" alt="Фото Трэвиса Баркера">
+                          <picture>
+                            <source media="(min-width: 1200px)" srcset="img/pic-travis-desktop.jpg">
+                            <source media="(min-width: 768px)" srcset="img/pic-travis-tablet.jpg">
+                            <img src="img/pic-travis.jpg" alt="Фото Трэвиса Баркера">
+                          </picture>
                         </div>
                         <cite class="reviews__auhor-name">Трэвис Баркер</cite>
                         <p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
                     </blockquote>
                     <blockquote class="reviews__item slider__item--hidden">
                         <div class="reviews__auhor-foto">
-                            <img src="img/pic-travis.jpg" width="50" height="50" alt="Фото Трэвиса Баркера">
+                          <picture>
+                            <source media="(min-width: 1200px)" srcset="img/pic-travis-desktop.jpg">
+                            <source media="(min-width: 768px)" srcset="img/pic-travis-tablet.jpg">
+                            <img src="img/pic-travis.jpg" alt="Фото Трэвиса Баркера">
+                          </picture>
                         </div>
                         <cite class="reviews__auhor-name">Трэвис Баркер</cite>
                         <p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
                     </blockquote>
                     <blockquote class="reviews__item slider__item--hidden">
                         <div class="reviews__auhor-foto">
-                            <img src="img/pic-travis.jpg" width="50" height="50" alt="Фото Трэвиса Баркера">
+                          <picture>
+                            <source media="(min-width: 1200px)" srcset="img/pic-travis-desktop.jpg">
+                            <source media="(min-width: 768px)" srcset="img/pic-travis-tablet.jpg">
+                            <img src="img/pic-travis.jpg" alt="Фото Трэвиса Баркера">
+                          </picture>
                         </div>
                         <cite class="reviews__auhor-name">Трэвис Баркер</cite>
                         <p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
@@ -161,6 +171,7 @@
                 </div>
             </div>
         </section>
+
         <footer class="page-footer">
           <div class="page-footer__wrapper">
             <p class="footer__contacts">
@@ -196,23 +207,6 @@
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-
-            var mainNav = document.querySelector('.main-nav');
-            var mainNavToggle = mainNav.querySelector('.main-nav__toggle');
-
-            mainNav.classList.remove('main-nav--nojs');
-
-            function toggleMainNav() {
-            	if (mainNav.classList.contains('main-nav--closed')){
-            		mainNav.classList.remove('main-nav--closed');
-            		mainNav.classList.add('main-nav--opened');
-              } else {
-		            mainNav.classList.add('main-nav--closed');
-		            mainNav.classList.remove('main-nav--opened');
-              }
-            };
-
-            mainNavToggle.addEventListener('click', toggleMainNav);
         </script>
     </body>
 </html>

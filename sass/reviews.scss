@@ -1,5 +1,6 @@
 .reviews {
   height: 320px;
+  box-sizing: border-box;
   background-color: #f8f5f2;
   color: #000;
 }
@@ -41,18 +42,22 @@
 }
 
 @media (min-width: 768px) {
+  .reviews {
+    height: 355px;
+  }
   .reviews__wrapper {
+    padding-top: 37px;
     width: 640px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
   }
   .reviews__write {
-    display: initial;
+    display: inline-block;
     width: 160px;
     margin-left: auto;
     align-self: flex-end;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
   .reviews__items {
     display: flex;
@@ -62,6 +67,7 @@
     padding: 35px;
   }
   .reviews__title {
+    text-align: left;
     font-size: 40px;
     line-height: 40px;
     width: 40%;
@@ -74,11 +80,19 @@
     height: 160px;
     width: 50px;
     position: relative;
-    background-color: #f8f5f2;
     border: 1px solid #e5ddd5;
+    background-color: #f8f5f2;
+  }
+  .reviews__prev {
+    background: url(../img/slider-left-arrow.svg) no-repeat center center;
+  }
+  .reviews__next {
+    background: url(../img/slider-right-arrow.svg) no-repeat center center;
   }
   .reviews__item {
+    box-sizing: border-box;
     padding: 30px 10px 0px 30px;
+    height: 160px;
     width: 100%;
     order: 2;
     border: 1px solid #e5ddd5;
@@ -96,9 +110,6 @@
     margin: 0;
   }
   .reviews__auhor-foto img{
-    margin-right: 30px;
-    width: 90px;
-    height: 90px;
     border-radius: 50%;
   }
 }
@@ -109,14 +120,27 @@
   .reviews__item {
     padding: 0;
     margin: 0 20px;
+    width: 817px;
+    height: 160px;
+    box-sizing: border-box;
+  }
+  .reviews__item p {
+    padding: 0;
+    padding-right: 70px;
+    margin: 0;
+  }
+
+  .reviews__auhor-name {
+    display: inline-block;
+    padding-top: 30px;
+    font-size: 24px;
+  }
+  .reviews__auhor-foto {
+    box-sizing: border-box;
+    height: 160px;
+    margin-right: 65px;
   }
   .reviews__auhor-foto img {
-    background: url(../img/pic-travis-desktop.jpg) no-repeat;
-    display: block;
-    max-width: 249px;
-    max-height: 160px;
     border-radius: 0;
-    width: auto;
-    height: auto;
   }
 }

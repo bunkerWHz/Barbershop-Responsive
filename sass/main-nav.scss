@@ -78,6 +78,16 @@
     background-image: url(../img/login.png);
     opacity: 0.3;
   }
+  &:hover::before {
+    top: 17px;
+    left: 21px;
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/login.png);
+    opacity: 1;
+  }
 }
 
 .main-nav__toggle {

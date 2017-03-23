@@ -103,7 +103,14 @@
 }
 
 @media (min-width: 1200px) {
+  .page__footer {
+    height: 200px;
+    box-sizing: border-box;
+  }
   .page-footer__wrapper {
+    padding-bottom: 0;
+    height: auto;
+    box-sizing: border-box;
     flex-direction: row;
     flex-wrap: nowrap;
     width: 960px;
