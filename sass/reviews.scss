@@ -1,10 +1,9 @@
 .reviews {
-  height: 320px;
-  box-sizing: border-box;
   background-color: #f8f5f2;
   color: #000;
 }
 .reviews__wrapper {
+  height: 320px;
   width: 280px;
   margin: 0 auto;
   padding-top: 30px;
@@ -42,10 +41,8 @@
 }
 
 @media (min-width: 768px) {
-  .reviews {
-    height: 355px;
-  }
   .reviews__wrapper {
+    height: 355px;
     padding-top: 37px;
     width: 640px;
     display: flex;
@@ -116,6 +113,7 @@
 @media (min-width: 1200px) {
   .reviews__wrapper {
     width: 960px;
+    min-height: 385px;
   }
   .reviews__item {
     padding: 0;

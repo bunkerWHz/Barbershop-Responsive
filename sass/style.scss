@@ -9,10 +9,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 @import "normalize";
 @import "scafolding";
+@import "sprite";
 @import "btn";
 @import "slider";
+
 @import "main-header";
 @import "page-header";
 @import "main-nav";
@@ -21,3 +24,4 @@ img {
 @import "news";
 @import "reviews";
 @import "page-footer";
+@import "appoinment-forms";

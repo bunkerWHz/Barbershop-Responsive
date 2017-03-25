@@ -2,6 +2,7 @@
   background-color: #242424;
   box-sizing: border-box;
   min-width: 320px;
+  position: relative;
 }
 .advantages__wrapper {
   height: 400px;
@@ -97,7 +98,7 @@
 @media (min-width: 1200px) {
   .advantages__wrapper {
     width: 960px;
-    height: auto;
+    min-height: 455px;
   }
   .advantages__items {
     flex-direction: row;

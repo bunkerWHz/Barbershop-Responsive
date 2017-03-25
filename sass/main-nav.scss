@@ -2,7 +2,6 @@
   background-color: #826550;
   color: #fff;
   position: relative;
-  min-height: 50px;
   margin: 0 auto;
   width: auto;
 }
@@ -69,23 +68,14 @@
   text-decoration: none;
   position: relative;
   &::before {
-    top: 17px;
-    left: 21px;
     position: absolute;
     content: "";
-    width: 16px;
-    height: 16px;
-    background-image: url(../img/login.png);
+    top: 17px;
+    left: 21px;
     opacity: 0.3;
+    @include sprite($login);
   }
   &:hover::before {
-    top: 17px;
-    left: 21px;
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 16px;
-    background-image: url(../img/login.png);
     opacity: 1;
   }
 }

@@ -12,7 +12,18 @@ var svgmin = require("gulp-svgmin");
 var imagemin = require("gulp-imagemin");
 var rename = require("gulp-rename");
 var run = require("run-sequence");
+var spritesmith = require('gulp.spritesmith');
 
+gulp.task('sprite', function () {
+	var spriteData = gulp.src('img/icons/*.png')
+		.pipe(spritesmith({
+			/* this whole image path is used in css background declarations */
+			imgName: '../img/icons/sprite.png',
+			cssName: '../sass/sprite.scss'
+		}));
+	spriteData.img.pipe(gulp.dest('img'));
+	spriteData.css.pipe(gulp.dest('css'));
+});
 
 gulp.task("copy", function() {
 	return gulp.src(["fonts/**/*.{woff,woff2}","img/**","js/**","*.html"], {base: "."})
@@ -57,9 +68,10 @@ gulp.task("symbols", function() {
 gulp.task("build", function(fn) {
 	run(
 		"clean",
-		"copy",
-		"style",
 		"images",
+		"sprite",
+		"style",
+		"copy",
 		"symbols",
 		fn
 	);
@@ -67,9 +79,11 @@ gulp.task("build", function(fn) {
 
 gulp.task("serve", function() {
 	server.init({
+		host: "192.168.31.166",
+		port: 8080,
 		server: "build"
 	});
 	gulp.watch("sass/**/*.scss", ["style"]);
-	gulp.watch("*.html").on("change", server.reload);
+	gulp.watch("../*.html").on("change", server.reload);
 	gulp.watch("build/css/*.css").on('change', server.reload);
 });

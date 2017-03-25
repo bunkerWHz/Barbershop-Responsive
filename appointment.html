@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Запись на стрижку</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<header class="main-header">
+  <h1 class="visuallyhidden">Барбершоп Бородинский</h1>
+  <div class="page-header__logo page-header__logo--inner">
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+      <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+      <img src="img/logotype-mobile.svg" width="370" height="153" alt="Барбершоп Бородинский">
+    </picture>
+  </div>
+  <nav class="main-nav main-nav--closed main-nav--nojs">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__items">
+        <li class="main-nav__item main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item main-nav__item"><a href="#">Наши работы</a></li>
+        <li class="main-nav__item main-nav__item--active"><a>Записаться</a></li>
+        <li class="main-nav__item main-nav__item"><a href="#">Контакты</a></li>
+        <li class="main-nav__item main-nav__item"><a href="#">HTML Academy</a></li>
+      </ul>
+      <ul class="main-nav__user-items">
+        <li class="main-nav__user-item"><a class="main-nav__user-login" title="Войти" href="#">Вход</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<section class="appointment-forms">
+  <div class="appointment-forms__wrapper">
+    <div class="appointment-form__bio">
+      <h1 class="appointment-forms__title">Запись на стрижку</h1>
+      <a class="links__to-all" href="index.html">На главную</a>
+
+      <form action="https://blabla.ru" method="post" class="appointment-form" name="appointment-form__client-data">
+        .
+        <input type="text" placeholder="Фамилия">
+        <input type="text" placeholder="Имя">
+        <input type="text" placeholder="Отчество">
+
+        <input type="tel" placeholder="Контактный телефон">
+        <input type="email" placeholder="Контактный e-mail">
+
+        <textarea name="add-info" placeholder="Доп. информация для мастера" id="" cols="3" rows="1"></textarea>
+    </div>
+
+
+      <div class="appointment-form__beard-items">
+        <h2 class="beard-items__title">Выберите модель бороды:</h2>
+
+        <div class="appointment-form__beard-item">
+          <input checked type="radio"  name="beard-style" id="beard-1">
+          <label for="beard-1"><span></span>Адмирал</label>
+          <img src="../img/beard-1.svg" alt="Тип бороды Адмирал">
+        </div>
+
+        <div class="appointment-form__beard-item">
+          <input type="radio"  name="beard-style" id="beard-2">
+          <label for="beard-2"><span></span>Лесоруб</label>
+          <img src="../img/beard-2.svg" alt="Тип бороды Лесоруб">
+        </div>
+        <div class="appointment-form__beard-item">
+          <input type="radio"  name="beard-style" id="beard-3">
+          <label for="beard-3"><span></span>Лесоруб</label>
+          <img src="../img/beard-3.svg" alt="Тип бороды Лесоруб">
+        </div>
+
+        <div class="appointment-form__beard-item">
+          <input type="radio"  name="beard-style" id="beard-4">
+          <label for="beard-4"><span></span>Лесоруб</label>
+          <img src="../img/beard-4.svg" alt="Тип бороды Лесоруб">
+        </div>
+
+        <div class="appointment-form__beard-item">
+          <input type="radio"  name="beard-style" id="beard-5">
+          <label for="beard-5"><span></span>Лесоруб</label>
+          <img src="../img/beard-5.svg" alt="Тип бороды Лесоруб">
+        </div>
+      </div>
+
+
+    <div class="add-features">
+      <h2 class="add-features__title">Дополнительные услуги:</h2>
+      <label for="option1"><input id="option1" type="checkbox"><span></span>Подкрасить бороду</label>
+      <label for="option2"><input id="option2" type="checkbox"><span></span>Накрутить усы</label>
+      <label for="option3"><input id="option3" type="checkbox"><span></span>Причесать бороду</label>
+      <label for="option4"><input id="option4" type="checkbox"><span></span>Подровнять виски</label>
+      <label for="option5"><input id="option5" type="checkbox"><span></span>Убрать седену</label>
+      <label for="option6"><input id="option6" type="checkbox"><span></span>Отполировать лысину</label>
+    </div>
+    <button type="submit" class="appointment-form__submit-link btn">Отправить заявку</button>
+  </form>
+  </div>
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <p class="footer__contacts">
+      <b>Барбершоп "Бородинский"</b><br>
+      г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+      <a href="tel:+78323223234"><span class="page-footer__contacts-hidden">Тел.:</span>+7(832) 322-32-34</a>
+    </p>
+    <p class="page-footer__social">
+                <span class="social-links">
+                    <a href="#" class="social-link"><i class="social-link--vk"></i>Мы в Вконтакте</a>
+                    <a href="#" class="social-link"><i class="social-link--fb"></i>Мы в Фейсбуке</a>
+                    <a href="#" class="social-link"><i class="social-link--in"></i>Мы в Инстаграме</a>
+                </span>
+    </p>
+    <p class="page-footer__copyright">
+      Сверстал:
+      <a href="#" class="btn page-footer__copyright-link">Андрей Парсегов</a>
+    </p>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/picturesfill.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+	(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='https://www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+	ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+
+</body>
+</html>
