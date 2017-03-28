@@ -84,6 +84,6 @@ gulp.task("serve", function() {
 		server: "build"
 	});
 	gulp.watch("sass/**/*.scss", ["style"]);
-	gulp.watch("../*.html").on("change", server.reload);
+	gulp.watch("*.html").on("change", server.reload);
 	gulp.watch("build/css/*.css").on('change', server.reload);
 });

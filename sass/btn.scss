@@ -12,4 +12,18 @@
   box-sizing: border-box;
   color: #000;
   background-color: #f8f5f2;
+  &:hover {
+    border-color: #d5c9bd;
+  }
+  &:active {
+    background-color: #d5c9bd;
+  }
+}
+button {
+  &:hover {
+    border-color: #d5c9bd;
+  }
+  &:active {
+    background-color: #d5c9bd;
+  }
 }

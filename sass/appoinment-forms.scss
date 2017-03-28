@@ -4,6 +4,15 @@
   background-color: #f8f5f2;
   color: #000000;
 }
+
+.appointment-form input,
+.appointment-form textarea {
+  outline: none;
+  &:hover {
+    border-color: #d5c9bd;
+  }
+}
+
 .appointment-forms__wrapper {
   width: 280px;
   margin: 0 auto;
@@ -104,33 +113,49 @@
 
 .appointment-form__beard-item input[type=radio] ~ label span {
   position: relative;
+  &::before {
+    cursor: pointer;
+    position: absolute;
+    top: -50px;
+    content: '';
+    box-sizing: border-box;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ebe5df;
+    z-index: 1;
+  }
+  &:hover::before {
+    border-color: #d5c9bd;
+  }
+  &:active::before {
+    background-color: #d5c9bd;
+  }
 }
-.appointment-form__beard-item input[type=radio] ~ label span::before{
-  position: absolute;
-  top: -50px;
-  content: '';
-  box-sizing: border-box;
-  display: block;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  background-color: #ffffff;
-  border: 1px solid #ebe5df;
-  z-index: 1;
-}
-.appointment-form__beard-item input[type=radio]:checked ~ label span::after{
-  position: absolute;
-  content: '';
-  top: -35px;
-  left: 15px;
-  box-sizing: border-box;
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  background-color: #ffffff;
-  border: 1px solid #ebe5df;
-  z-index: 2;
+.appointment-form__beard-item input[type=radio]:checked ~ label span {
+  cursor: pointer;
+  &::after{
+    position: absolute;
+    content: '';
+    top: -35px;
+    left: 15px;
+    box-sizing: border-box;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ebe5df;
+    z-index: 2;
+  }
+  &:hover::after {
+   border-color: #d5c9bd;
+ }
+  &:active::after {
+    background-color: #fff;
+  }
 }
 .add-features__title {
   @extend .appointment-form__title;
@@ -150,19 +175,37 @@
 .add-features input[type=checkbox] span {
   position: relative;
 }
-.add-features input[type=checkbox] ~ span::before {
-  content: '';
-  margin-right: 24px;
-  display: inline-block;
-  box-sizing: border-box;
-  width: 36px;
-  height: 36px;
-  border: 1px solid #e5ddd5;
-  color: #000000;
-  background-color: #fff;
+.add-features input[type=checkbox] ~ span {
+  cursor: pointer;
+  &::before {
+    content: '';
+    margin-right: 24px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #e5ddd5;
+    color: #000000;
+    background-color: #fff;
+  }
+  &:hover::before {
+    border-color: #d5c9bd;
+  }
+  &:active::before {
+    background-color: #d5c9bd;
+  }
 }
-.add-features input[type=checkbox]:checked ~ span::before {
-  background: #fff url(../img/checkbox-checked.svg) no-repeat center center;
+.add-features input[type=checkbox]:checked ~ span{
+  cursor: pointer;
+  &::before {
+    background: #fff url(../img/checkbox-checked.svg) no-repeat center center;
+  }
+  &:hover::before {
+    border-color: #d5c9bd;
+  }
+  &:active::before {
+    background-color: #d5c9bd;
+  }
 }
 
 .appointment-forms__wrapper .appointment-form__submit-link {
@@ -172,6 +215,15 @@
   margin-bottom: 73px;
   color: #ffffff;
   background-color: #826550;
+  &:disabled {
+    background-color: #d5c9bd;
+  }
+  &:active {
+    color: #978374;
+  }
+  &:hover {
+    background-color: #6a4d38;
+  }
 }
 
 @media (min-width: 768px) {
@@ -191,6 +243,12 @@
   }
   .appointment-forms__wrapper .links__to-all {
     margin: 55px 0 70px;
+    &:hover {
+      border-color: #d5c9bd;
+    }
+    &:active {
+      background-color: #d5c9bd;
+    }
   }
   .appointment-form {
     display: flex;
@@ -313,4 +371,4 @@
       width: 285px;
     }
   }
-  }
+}
