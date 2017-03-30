@@ -43,10 +43,12 @@
   border: 1px solid #e5ddd5;
   padding-right: 35px;
   text-align: left;
-
-  &__password {
-    margin-bottom: 26px;
+  &::placeholder {
+    color: #000;
   }
+}
+.login-form__password {
+  margin-bottom: 26px;
 }
 .login-form input[type=checkbox] {
   display: none;
@@ -60,6 +62,7 @@
   position: relative;
   padding-top: 5px;
   padding-left: 45px;
+  margin-right: 20px;
 }
 .login-form__form label::before {
   content: "";
@@ -80,7 +83,6 @@
   vertical-align: top;
   height: 40px;
   padding-top: 5px;
-  margin-left: 20px;
 }
 
 @media (max-width: 767px) {
@@ -117,5 +119,36 @@
     width: 130px;
     margin: 0;
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .login-form {
+    width: 460px;
+    height: 502px;
+    top: 130px;
+    left: calc(50% - 230px);
+  }
+  .login-form__wrapper {
+    width: 320px;
+  }
+  .login-form__title {
+    font-size: 40px;
+    margin-top: 60px;
+  }
+  .login-form p {
+    text-align: center;
+  }
+  .login-form__login, .login-form__password {
+    height: 70px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .login-form__btn-login {
+    width: 100%;
+  }
+  .login-form__form label {
+    margin-bottom: 26px;
+    margin-right: 60px;
   }
 }
