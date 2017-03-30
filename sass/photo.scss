@@ -1,0 +1,189 @@
+.photo {
+  background-color: #f8f5f2;
+  min-width: 320px;
+  box-sizing: border-box;
+}
+.photo__wrapper {
+  box-sizing: border-box;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+.photo__title {
+  color: #000;
+  margin: 0 auto;
+  padding: 32px 0;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  order: 1;
+}
+.photo__items {
+  padding: 0;
+  padding-bottom: 50px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  order: 3;
+  width: 100%;
+  box-sizing: border-box;
+}
+.photo__item {
+  border: 1px solid #e5ddd5;
+  margin-bottom: 20px;
+}
+.photo__item img {
+  width: 100%;
+}
+.photo__item--top-work {
+  width: 100%;
+}
+.photo__item .photo__auhor {
+  color: #000;
+  display: inline-block;
+  font-size: 24px;
+  line-height: 27px;
+  padding-left: 21px;
+  margin: 28px 0;
+}
+.photo__item p {
+  color: #000;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 21px;
+  padding-right: 30px;
+  margin: 0;
+  margin-bottom: 23px;
+}
+.photo__features {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.photo__feature {
+  color: #000;
+  box-sizing: border-box;
+  width: 50%;
+  font-size: 16px;
+  line-height: 27px;
+  text-transform: uppercase;
+  height: 30px;
+  padding-left: 53px;
+  padding-right: 10px;
+  &--mustache{
+    background: url(../img/mustache-icon.svg) no-repeat 10px center;
+    padding-left: 63px;
+  }
+  &--haircut {
+    background: url(../img/scissors-icon.svg) no-repeat 21px center;
+  }
+  &--shaving {
+    background: url(../img/beard-icon.svg) no-repeat 21px center;
+  }
+}
+
+.photo__label--hidden {
+  display: none;
+}
+.photo .links__to-all {
+  @extend .btn;
+  background-color: #f8f5f2;
+  color: #000;
+  width: 160px;
+  height: 50px;
+  border: 1px solid #e5ddd5;
+  box-sizing: border-box;
+  margin: 32px 0 38px auto;
+  order: 2;
+}
+@media (max-width: 767px) {
+  .photo__wrapper .links__to-all {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .photo__wrapper {
+    width: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .photo__title {
+    text-align: left;
+    width: 320px;
+    margin: 0;
+  }
+  .photo__item {
+    display: flex;
+    flex-direction: row;
+    min-height: 296px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+  }
+  .photo__item p {
+    padding-right: 50px;
+  }
+  .photo__item--top-work p {
+    padding-right: 28px;
+  }
+
+  .photo__item {
+    width: 640px;
+    box-sizing: border-box;
+  }
+  .photo__item-description {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo__wrapper {
+    width: 960px;
+  }
+  .photo__title {
+    height: 30px;
+  }
+  .photo__item {
+    width: 296px;
+    height: 542px;
+    flex-direction: column;
+    margin-right: 36px;
+    &:last-child, &:first-child {
+      margin-right: 0;
+    }
+  }
+
+  .photo__item--top-work {
+    width: 100%;
+    height: 480px;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+  .photo__item--top-work .photo__item-description {
+    justify-content: space-around;
+    padding-top: 130px;
+    padding-right: 100px;
+    width: 445px;
+    height: 480px;
+  }
+  .photo__item-description {
+    width: auto;
+    height: 100%;
+  }
+  .photo__item .photo__auhor {
+    margin-top: 0;
+  }
+  .photo__item--top-work .photo__feature {
+    width: 33%;
+  }
+}

@@ -1,0 +1,121 @@
+.login-form {
+  font-family: 'PT Sans Narrow', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  min-width: 320px;
+  width: 100%;
+  height: 410px;
+  color: #000;
+  background-color: #f8f5f2;
+  position: absolute;
+  z-index: 10;
+}
+.login-form--hidden {
+  display: none;
+}
+.login-form__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+.login-form__title {
+  margin-top: 36px;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.login-form__title p {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 28px auto;
+}
+.login-form__login, .login-form__password {
+  font-family: 'PT Sans Narrow', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  outline: none;
+  box-sizing: border-box;
+  padding: 17px 16px;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 6px;
+  border: 1px solid #e5ddd5;
+  padding-right: 35px;
+  text-align: left;
+
+  &__password {
+    margin-bottom: 26px;
+  }
+}
+.login-form input[type=checkbox] {
+  display: none;
+}
+.login-form__form label {
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  height: 40px;
+  position: relative;
+  padding-top: 5px;
+  padding-left: 45px;
+}
+.login-form__form label::before {
+  content: "";
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  box-sizing: border-box;
+  border: 1px solid #e5ddd5;
+  background-color: #fff;
+}
+.login-form__password-recovery {
+  color: #000;
+  display: inline-block;
+  vertical-align: top;
+  height: 40px;
+  padding-top: 5px;
+  margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+  .btn-login__text--hidden {
+    display: none;
+  }
+  .login-form__btn-close {
+    display: inline-block;
+  }
+}
+
+.login-form input[type=checkbox]:checked ~ label {
+  cursor: pointer;
+  &::before {
+    background: #fff url(../img/checkbox-checked.svg) no-repeat center center;
+  }
+  &:hover::before {
+    border-color: #d5c9bd;
+  }
+  &:active::before {
+    background-color: #d5c9bd;
+  }
+}
+
+.login-form__btn {
+  &-login{
+    min-width: 130px;
+    color: #fff;
+    background-color: #826550;
+    border-color: #826550;
+    margin-right: 16px;
+  }
+  &-close{
+    width: 130px;
+    margin: 0;
+    display: none;
+  }
+}

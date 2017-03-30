@@ -15,7 +15,7 @@
 </head>
 <body>
 <header class="main-header">
-  <h1 class="visuallyhidden">Барбершоп Бородинский</h1>
+  <h2 class="visuallyhidden">Барбершоп Бородинский</h2>
   <div class="page-header__logo page-header__logo--inner">
     <picture>
       <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
@@ -28,7 +28,7 @@
     <div class="main-nav__wrapper">
       <ul class="main-nav__items">
         <li class="main-nav__item main-nav__item"><a href="index.html">Главная</a></li>
-        <li class="main-nav__item main-nav__item"><a href="#">Наши работы</a></li>
+        <li class="main-nav__item main-nav__item"><a href="portfolio.html">Наши работы</a></li>
         <li class="main-nav__item main-nav__item--active"><a>Записаться</a></li>
         <li class="main-nav__item main-nav__item"><a href="#">Контакты</a></li>
         <li class="main-nav__item main-nav__item"><a href="#">HTML Academy</a></li>
@@ -39,6 +39,21 @@
     </div>
   </nav>
 </header>
+
+<section class="login-form login-form--hidden">
+  <div class="login-form__wrapper">
+    <form class="login-form__form" action="https://something.ru/formdata" method="post">
+      <h2 class="login-form__title">Личный кабинет</h2>
+      <p>Введите свой логин и пароль, чтобы войти</p>
+      <input type="text" placeholder="Логин" class="login-form__login">
+      <input type="password"  placeholder="Пароль" class="login-form__password">
+      <input id="remember-me" type="checkbox"><label for="remember-me">Запомните меня</label>
+      <a href="#" class="login-form__password-recovery">Я забыл пароль!</a>
+      <button type="submit" class="login-form__btn-login btn">Войти <span class="btn-login__text--hidden">в личный кабинет</span></button>
+      <div class="login-form__btn-close btn">Закрыть</div>
+    </form>
+  </div>
+</section>
 
 <section class="appointment-forms">
   <div class="appointment-forms__wrapper">

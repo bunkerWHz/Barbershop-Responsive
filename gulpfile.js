@@ -19,7 +19,8 @@ gulp.task('sprite', function () {
 		.pipe(spritesmith({
 			/* this whole image path is used in css background declarations */
 			imgName: '../img/icons/sprite.png',
-			cssName: '../sass/sprite.scss'
+			cssName: '../sass/sprite.scss',
+			algorithm: 'top-down'
 		}));
 	spriteData.img.pipe(gulp.dest('img'));
 	spriteData.css.pipe(gulp.dest('css'));

@@ -10,7 +10,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border-top: 1px solid #3e3e3e;
 }
 .footer__contacts {
   box-sizing: border-box;
@@ -49,7 +48,10 @@
   align-items: center;
   justify-content: center;
   &:hover {
-    opacity: 0.3;
+    border-color: #545454;
+  }
+  &:active {
+    color: #676767;
   }
 }
 .page-footer__copyright {
@@ -66,7 +68,10 @@
   width: 100%;
   border-color: #3e3e3e;
   &:hover {
-    opacity: 0.3;
+    border-color: #545454;
+  }
+  &:active {
+    color: #676767;
   }
 }
 .social-link--vk {
