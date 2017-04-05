@@ -20,6 +20,7 @@ gulp.task('sprite', function () {
 			/* this whole image path is used in css background declarations */
 			imgName: '../img/icons/sprite.png',
 			cssName: '../sass/sprite.scss',
+			padding: 50,
 			algorithm: 'top-down'
 		}));
 	spriteData.img.pipe(gulp.dest('img'));
