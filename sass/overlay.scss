@@ -1,8 +1,10 @@
 .overlay {
   height: 100vh;
   width: 100vw;
-  position: absolute;
-  z-index: 2;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  background-color: rgba(#000, 0.5);
 }
 .overlay--hidden {
   display: none;

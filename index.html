@@ -59,7 +59,9 @@
             </form>
           </div>
         </section>
+
         <div class="overlay overlay--hidden"></div>
+
         <section class="stats">
               <header class="stats__header">
                   <h2 class="stats__title visuallyhidden">Статистика Барбершопа</h2>
@@ -91,19 +93,19 @@
         <section class="advantages">
             <div class="advantages__wrapper slider">
                 <h2 class="advantages__title visuallyhidden">Наши преимущества</h2>
-                <input class="slider__input" type="radio" name="advantages" id="advantages-input-1" checked>
-                <input class="slider__input" type="radio" name="advantages" id="advantages-input-2">
-                <input class="slider__input" type="radio" name="advantages" id="advantages-input-3">
+                <input class="slider__input slider__input--1" type="radio" name="advantages" id="advantages-input-1" checked>
+                <input class="slider__input slider__input--2" type="radio" name="advantages" id="advantages-input-2">
+                <input class="slider__input slider__input--3" type="radio" name="advantages" id="advantages-input-3">
                 <ul class="advantages__items">
-                    <li class="advantages__item advantages__item--fast slider__item">
+                    <li class="advantages__item slider__item--1">
                         <h3 class="advantages__item-title">Быстро</h3>
                         <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки</p>
                     </li>
-                    <li class="advantages__item slider__item">
+                    <li class="advantages__item slider__item--2">
                         <h3 class="advantages__item-title">Круто</h3>
                         <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
                     </li>
-                    <li class="advantages__item slider__item">
+                    <li class="advantages__item slider__item--3">
                         <h3 class="advantages__item-title">Дорого</h3>
                         <p>Наши мастера - профессионалы своего дела не могут стоять дёшево. К тому же, разве цена не даёт определённый статус?</p>
                     </li>
@@ -147,11 +149,13 @@
             <div class="reviews__wrapper slider">
                 <h2 class="reviews__title">Отзывы о нас</h2>
                 <a href="#" class="reviews__write btn">Оставить свой</a>
-                <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
-                <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
-                <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+
+                <input class="slider__input slider__input--1" type="radio" name="reviews" id="reviews-input-1" checked>
+                <input class="slider__input slider__input--2" type="radio" name="reviews" id="reviews-input-2">
+                <input class="slider__input slider__input--3" type="radio" name="reviews" id="reviews-input-3">
+
                 <div class="reviews__items">
-                    <blockquote class="reviews__item slider__item">
+                    <blockquote class="reviews__item slider__item slider__item--1">
                         <div class="reviews__auhor-foto">
                           <picture>
                             <source media="(min-width: 1200px)" srcset="img/pic-travis-desktop.jpg">
@@ -162,7 +166,7 @@
                         <cite class="reviews__auhor-name">Трэвис Баркер</cite>
                         <p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
                     </blockquote>
-                    <blockquote class="reviews__item slider__item--hidden">
+                    <blockquote class="reviews__item slider__item slider__item--2">
                         <div class="reviews__auhor-foto">
                           <picture>
                             <source media="(min-width: 1200px)" srcset="img/pic-travis-desktop.jpg">
@@ -170,10 +174,10 @@
                             <img src="img/pic-travis.jpg" alt="Фото Трэвиса Баркера">
                           </picture>
                         </div>
-                        <cite class="reviews__auhor-name">Трэвис Баркер</cite>
-                        <p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+                        <cite class="reviews__auhor-name">Ненсис Котлер</cite>
+                        <p>Все супер! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
                     </blockquote>
-                    <blockquote class="reviews__item slider__item--hidden">
+                    <blockquote class="reviews__item slider__item slider__item--3">
                         <div class="reviews__auhor-foto">
                           <picture>
                             <source media="(min-width: 1200px)" srcset="img/pic-travis-desktop.jpg">
@@ -181,8 +185,8 @@
                             <img src="img/pic-travis.jpg" alt="Фото Трэвиса Баркера">
                           </picture>
                         </div>
-                        <cite class="reviews__auhor-name">Трэвис Баркер</cite>
-                        <p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+                        <cite class="reviews__auhor-name">Доминик Джонс</cite>
+                        <p>Мне понравилось! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
                     </blockquote>
                     <button class="reviews__prev" type="button">Предыдущий отзыв</button>
                     <button class="reviews__next" type="button">Следующий отзыв</button>

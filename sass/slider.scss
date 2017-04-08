@@ -1,21 +1,65 @@
 .slider__input {
   display: none;
 }
-.slider__toggle {
-  width: 4px;
-  height: 4px;
-  border: 1px solid white;
-  transform: rotate(45deg);
+.reviews__toggles .slider__toggle {
+  border: 1px solid #353535;
 }
-.slider__item--hidden {
-  display: none;
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  border: 1px solid #ffffff;
+  transform: rotate(45deg);
 }
 .slider__toggles {
   width: 80px;
   height: 12px;
   box-sizing: border-box;
   margin: 0 auto;
+  margin-top: 30px;
   font-size: 0;
   display: flex;
   justify-content: space-between;
+}
+
+#advantages-input-1:checked ~ .slider__toggles label[for=advantages-input-1],
+#advantages-input-2:checked ~ .slider__toggles label[for=advantages-input-2],
+#advantages-input-3:checked ~ .slider__toggles label[for=advantages-input-3] {
+  background-color: #fff;
+}
+#reviews-input-1:checked ~ .slider__toggles label[for=reviews-input-1],
+#reviews-input-2:checked ~ .slider__toggles label[for=reviews-input-2],
+#reviews-input-3:checked ~ .slider__toggles label[for=reviews-input-3] {
+  background-color: #353535;
+}
+
+.slider__input--1:checked ~ ul .slider__item--1 {
+  display: block;
+}
+.slider__input--2:checked ~ ul .slider__item--2 {
+  display: block;
+}
+.slider__input--3:checked ~ ul .slider__item--3 {
+  display: block;
+}
+.slider__input--4:checked ~ ul .slider__item--4 {
+  display: block;
+}
+.slider__input--5:checked ~ ul .slider__item--5 {
+  display: block;
+}
+
+.slider__input--1:checked ~ .reviews__items .slider__item--1 {
+  display: block;
+}
+.slider__input--2:checked ~ .reviews__items .slider__item--2 {
+  display: block;
+}
+.slider__input--3:checked ~ .reviews__items .slider__item--3 {
+  display: block;
+}
+.slider__input--4:checked ~ .reviews__items .slider__item--4 {
+  display: block;
+}
+.slider__input--5:checked ~ .reviews__items .slider__item--5 {
+  display: block;
 }

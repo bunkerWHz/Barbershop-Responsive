@@ -9,6 +9,20 @@
   background-color: #f8f5f2;
   position: absolute;
   z-index: 10;
+  &::before, &::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+    right: -60px;
+    top: 10px;
+    z-index: -1;
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 .login-form--hidden {
   display: none;
